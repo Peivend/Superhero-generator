@@ -45,10 +45,10 @@ const accidentGenerator = () => {
     const num = Math.floor(Math.random()*11)
     switch (num) {
         case 1:
-            accident = 'radioactive slime';
+            accident = 'thrown into radioactive slime';
         break;
         case 2:
-            accident = 'got bitten by a genetically engineered hamster';
+            accident = 'bitten by a genetically engineered hamster';
         break;
         case 3:
             accident = 'struck by mystical lightning during a storm';
@@ -57,13 +57,13 @@ const accidentGenerator = () => {
             accident = 'exposed to an ancient cursed artifact at a museum';
         break;
         case 5:
-            accident = 'survived an alien abduction experiment';
+            accident = 'abducted by an alien';
         break;
         case 6:
-            accident = 'drank a potion from a mysterious street vendor';
+            accident = 'drunk on a potion from a mysterious street vendor';
         break;
         case 7:
-            accident = 'fell into a portal to another dimension';
+            accident = 'fallen into a portal to another dimension';
         break;
         case 8: 
             accident = 'hit by a rogue meteorite that infused you with cosmic energy';
@@ -119,6 +119,11 @@ const superVillainGenerator = () => {
     }
 }
 
-superVillainGenerator();
+const superStoryGenerator = () => {
+    superpowerGenerator();
+    accidentGenerator();
+    superVillainGenerator();
+    console.log(`After being ${accident}, you gained ${superpower}! Now, you must fight against the evil ${superVillain}!`)
+}
 
-console.log(superVillain);
+superStoryGenerator();
