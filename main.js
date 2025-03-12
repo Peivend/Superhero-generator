@@ -80,6 +80,45 @@ const accidentGenerator = () => {
     } 
 }
 
-accidentGenerator();
+const superVillainGenerator = () => {
+    const sum = Math.floor(Math.random() * 11);
+    switch (sum) {
+        case 1:
+            superVillain = 'Dr. RoboRat - A half-cyborg rat with a grudge against humanity';
+        break;
+        case 2:
+            superVillain = 'The Quantum Phantom - A villain who phases in and out of reality';
+        break;
+        case 3:
+            superVillain = 'Lady Venomous - A crime lord with a toxic touch';
+        break;
+        case 4:
+            superVillain = 'The Time Tyrant - A dictator from the future who wants to rule all time';
+        break;
+        case 5:
+            superVillain = 'Professor DoomByte - An AI gone rogue, seeking world domination';
+        break;
+        case 6:
+            superVillain = 'Shadow Maw - A creature that lives in the darkness and devours light';
+        break;
+        case 7:
+            superVillain = 'Captain Chaos - A prankster villain who thrives on pure anarchy';
+        break;
+        case 8:
+            superVillain = 'The Frost Revenant - A ghostly ice-wielding sorcerer';
+        break;
+        case 9:
+            superVillain = 'Lord Oblivion - A cosmic entity that seeks to erase existence itself';
+        break;
+        case 10:
+            superVillain = 'Mecha-Kraken - A giant robotic squid bent on underwater domination';
+        break;
+        default:
+            superVillain = 'nobody';
+        break;
+    }
+}
 
-console.log(accident);
+superVillainGenerator();
+
+console.log(superVillain);
